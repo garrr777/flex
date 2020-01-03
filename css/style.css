@@ -103,6 +103,8 @@ img[src="img/html.svg"]{
 .news-boxes{
 	display: flex;
 	justify-content: space-between;
+	max-width: 1170px;
+	padding: 0 0 0 0;
 }
 .n-box{
 	background-color: #e5e5e5;
@@ -167,4 +169,49 @@ footer{
 .flex{
 	display: flex;
 	justify-content: space-between;
+}
+
+/* ////////////////////////////////START NEWS PAGE//////////////////////////////////*/
+
+.soc-icons ul{
+	list-style-type: none;
+}
+.soc-icons li{
+	margin: 0 15px 0 0;
+	padding: 0 15px 0 0;
+	border-right: 1px solid #3d58a5;
+}
+.soc-icons li:last-child{
+	border: 0;
+}
+
+
+.news-boxes-padding{
+	padding: 100px 0 0 0;
+}
+.news-content button{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	margin: 50px auto 0;
+	color: white;
+	background-color: #83939b;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+
+.slider-dot{
+	margin: 20px auto 0;
+	display: inline-flex;
+}
+.white-dot, .dot{
+	margin: 0 5px 0 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid white;
+}
+.white-dot{
+	background-color: white;
+	height: 10px;
 }
