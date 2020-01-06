@@ -219,7 +219,7 @@ footer{
 	height: 10px;
 }
 
-/*////////////////////////////////ABOUT PAGE/////////////////////////////////*/
+/*////////////////////////////////TYPOGRAPHY PAGE/////////////////////////////////*/
 
 .t-lab-section{
 	background-color: #bdccd4;
@@ -227,6 +227,7 @@ footer{
 .t-lab-link{
 	display: flex;
 	justify-content: space-between;
+	padding: 30px 0;
 }
 .t-lab-link span{
 	color: #353e97;
@@ -262,6 +263,7 @@ span.num{
 	font-size: 22px;
 	text-transform: uppercase;
 	background-color: #EA8FD0;
+	margin: 10px 0 20px 0;
 }
 .typography-desc img{
 	float: left;
@@ -276,4 +278,90 @@ span.num{
 .links{
 	display: flex;
 	justify-content: space-between;
+}
+
+/*//////////////////////////////////ABOUT PAGE////////////////////////////*/
+
+
+.about-panel{
+	background-color: #ee4035;
+	padding: 30px 0;
+}
+.about-panel h3{
+	display: inline-block;
+	color: white;
+	font-size: 22px;
+	text-transform: uppercase;
+	background-color: #EA8FD0;
+}
+.slide-section{
+	border-bottom: 1px solid #ee4035;
+}
+.slide{
+	display: flex;
+	justify-content: space-between;
+	margin: 60px 0 35px 0;
+}
+.slide-img{
+	max-width: 300px;
+	min-height: 370px;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+}
+.slide-img img{
+	border: 1px solid #ee4035;
+	padding: 50px;
+	max-width: 400px;
+}
+.slide-img h3, .slide-img2 h3{
+	font-size: 22px;
+	color: #ee4035;
+	background-color: #EA8FD0;
+	text-transform: uppercase;
+	margin: 10px 0;
+}
+.slide-img p, .slide-img2 p{
+	font-size: 20px;
+	color: #58595b;
+	background-color: #EA8FD0;
+}
+.slide-img2{
+	max-width: 400px;
+	min-height: 470px;
+}
+.slide-img2 img{
+	border: 1px solid #ee4035;
+	padding: 100px 70px;
+	max-width: 400px;
+}
+
+.team-section{
+	margin: 20px 0 130px 0;
+}
+.team > h3{
+	display: inline-block;
+	font-size: 22px;
+	background-color: #EA8FD0;
+	text-transform: uppercase;
+	color: #ee4035;
+}
+.team-info{
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0 0 0;
+}
+.person-info{
+	position: relative;
+	max-width: 200px;
+	min-height: 170px;
+}
+.person-info h3{
+	display: inline-block;
+	position: absolute;
+	font-size: 22px;
+	background-color: #EA8FD0;
+	left: 15%;
+	top: 48%;
+	text-transform: uppercase;
 }
