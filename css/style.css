@@ -365,3 +365,56 @@ span.num{
 	top: 48%;
 	text-transform: uppercase;
 }
+
+/*///////////////////////////////////CONTACT PAGE//////////////////////////////*/
+
+
+.contact-section{
+	
+
+}
+.contact-info{
+	display: flex;
+	justify-content: space-between;
+	background-color: #363e97;
+	padding: 40px 175px 40px 100px;
+}
+.address{
+	max-width: 200px;
+	color: white;
+}
+.address *{
+	margin: 0 0 35px 0;
+	font-size: 20px;
+}
+.form{
+	width: 630px;
+	color: white;
+	font-size: 20px;
+	text-transform: capitalize;
+}
+.form label{
+	display: block;
+	padding: 10px 0 5px 25px;
+}
+.form input{
+	width: 100%;
+	padding: 10px;
+}
+.form textarea{
+	width: 100%;
+}
+.form .submit{
+	padding: 12px 45px;
+	background-color: #ee4035;
+	display: inline-block;
+}
+.form button{
+	background-color: #EA8FD0;
+	color: white;
+	text-transform: uppercase;
+}
+.link{
+	display: flex;
+	justify-content: flex-end;
+}
