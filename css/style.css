@@ -18,6 +18,7 @@ img[src="img/logo.svg"]{
 	display: flex;
 	justify-content: space-between;
 	padding: 25px 0;
+	align-items: center;
 }
 .nav ul{
 	display: flex;
@@ -36,7 +37,9 @@ img[src="img/logo.svg"]{
 	background-color: #EA8FD0;
 	font-size: 24px;
 }
-
+.burger-menu-html{
+	display: none;
+}
 
 .comp-section{
 	padding: 25px 0;
@@ -74,17 +77,20 @@ img[src="img/html.svg"]{
 	color: white;
 	font-size: 24px;
 	display: inline-block;
+	margin: 0 0 20px 0;
 }
 .video-boxes{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .v-box{
-	width: 48%;
+	position: relative;
+	width: 550px;
 	height: 320px;
 	background-color: #f2f2f2;
 	text-align: center;
-	position: relative;
+	margin: 20px 0;
 }
 .v-box p{
 	position: absolute;
@@ -102,10 +108,12 @@ img[src="img/html.svg"]{
 	color: white;
 	font-size: 24px;
 	display: inline-block;
+	margin: 20px 0;
 }
 .news-boxes{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	max-width: 1170px;
 	padding: 0 0 0 0;
 }
@@ -114,9 +122,9 @@ img[src="img/html.svg"]{
 	max-width: 270px;
 }
 .n-box h4{
-	text-transform: uppercase;
-	margin-left: 10px;
 	display: inline-block;
+	text-transform: uppercase;
+	padding: 20px;
 }
 
 
@@ -129,15 +137,17 @@ img[src="img/html.svg"]{
 	color: white;
 	font-size: 24px;
 	display: inline-block;
+	margin: 20px 0;
 }
 .media-boxes{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .m-box{
 	background-color: #f2f2f2;
 	padding: 0 20px 30px 45px;
-	max-width: 500px;
+	width: 500px;
 	position: relative;
 }
 .m-box h4{
@@ -146,6 +156,7 @@ img[src="img/html.svg"]{
 	text-transform: uppercase;
 	background-color: #EA8FD0;
 	display: inline-block;
+	margin: 20px 0;
 }
 .m-box a{
 	text-decoration: none;
@@ -417,4 +428,50 @@ span.num{
 .link{
 	display: flex;
 	justify-content: flex-end;
+}
+
+
+
+@media screen and (max-width: 1024px){
+	.nav{
+		display: none;
+	}
+	.burger-menu-html{
+		display: block;
+	}
+	.burger-menu-html:hover .nav{
+		display: block;
+	}
+	.video-boxes{
+		display: flex;
+		justify-content: center;
+	}
+	.n-box:last-child{
+		display: none;
+	}
+	.m-box{
+		width: 100%;
+		margin: 20px 0;
+	}
+}
+@media screen and (max-width: 480px){
+	.soc-icons li{
+		display: none;
+	}
+	.soc-icons li:last-child{
+		display: block;
+	}
+	.v-box{
+		padding: 20px;
+	}
+	.news-boxes{
+		flex-direction: column;
+		align-content: center;
+	}
+	.n-box{
+		margin: 20px 0;
+	}
+	.media-section{
+		padding: 20px;
+	}
 }
