@@ -40,7 +40,12 @@ img[src="img/logo.svg"]{
 .burger-menu-html{
 	display: none;
 }
-
+.burger-nav{
+	display: none;
+}
+.burger-relative{
+	position: relative;
+}
 .comp-section{
 	padding: 25px 0;
 	background-color: #eee;
@@ -439,8 +444,10 @@ span.num{
 	.burger-menu-html{
 		display: block;
 	}
-	.burger-menu-html:hover .nav{
+	.burger-menu-html:hover .burger-nav{
 		display: block;
+		position: absolute;
+		right: 0;
 	}
 	.video-boxes{
 		display: flex;
